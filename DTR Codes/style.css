@@ -1,0 +1,498 @@
+body{
+	margin: 0;
+	padding:  0;
+	font-family: montserrat;
+	background-image: url('img/Untitled Project.jpg');
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+
+	 	
+}
+
+
+nav{
+	background: blue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;	
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+.yellow{
+    
+	background: yellow;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+
+}
+
+.dashb{
+   
+    padding: 5px
+	color: blue;	
+}
+
+
+
+.login{
+	position: absolute;
+	top: 50%
+	left:50%;
+	transform: translate(120%, 5%);
+    width:400px;
+    background: white;
+    border-radius: 30px; 
+
+}
+
+.login h1{
+
+	text-align: center;
+	padding: 0px 0 30px 20px;
+	border-bottom: 1px solid silver;
+}
+
+.login form{
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+form .txt_field{
+     
+    position: relative; 
+    border-bottom: 5px solid skyblue;
+	margin: 30px 0px;
+
+
+}
+
+.txt_field input{
+
+	width: 100%;
+	padding: 10px 5px;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+	background:none;
+	outline: none;
+
+}
+
+.txt_field label{
+	
+	color: #adadad;
+	transform: translateY(50%);
+	font-size: 16px;
+	pointer-events: none;
+}
+
+.txt_field span::before{
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	height:2px;
+	background: skyblue;
+	text-transition:.5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+	top:-5px;
+	color: red;
+}
+
+.txt_field input:focus ~ span::before 
+.txt_field input:valid ~ span::before{
+   width:100%;
+}
+
+
+.pass::hover{
+	margin:-5px 0 20px 5px;
+	color:red;
+	
+
+}
+
+.pass:hover{
+	color: skyblue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+input [type="submit"]::hover{
+	width: 60%;
+	height: 20px;
+	border: 3px solid;
+	background:gray;
+	border-radius: 25px;
+	font-size: 18px;
+	color: black;
+	font-weight: 700;
+	outline: blue;
+}
+
+input [type="submit"]:hover{
+	border-color: darkblue;
+	transition: .5s;
+
+}
+
+
+
+
+
+.logo {
+	 position: absolute;
+     width: 90px;
+     margin-top: -70px;
+     left: 395px;
+     height:auto;
+
+
+}
+
+.card{
+
+     position: absolute;
+     width: 300px;
+     margin: 40px;
+     padding-bottom:70%;
+     left: 900px;
+     opacity: 90%;
+     height:auto;
+
+
+
+}
+.face{
+
+     position: absolute;
+     width: 100px;
+     margin-top: 27%;
+     left: 650px;
+     opacity: 90%;
+     height:auto;
+
+
+}
+
+#current-time{
+    text-indent: 150px;
+	font-size: 100px;
+	font-weight: bolder;
+	text-shadow: 2px 2px white;
+	color: darkblue;
+	margin: 100px;
+	padding: 60px;
+	text-align: center;
+	
+}
+
+.qrstatement {
+	font-size: 40px;
+	font-weight: bolder;
+	text-shadow: 2px 2px white;
+	color: darkblue;
+	margin: 40px;
+	padding: 30px;
+	margin-top: 6%;
+}
+
+.fcstatement{
+
+	font-size: 40px;
+	font-weight: bolder;
+	text-shadow: 2px 2px white;
+	color: darkblue;
+	margin: 40px;
+	padding: 60px;
+	text-align: center;
+	margin-top: 30%;
+
+}
+#head1{
+	color: yellow;
+	font-size: 20px;
+	
+}
+
+#head2{
+	font-size: 30px;
+	color: white;
+	text-shadow: 2px 2px black;
+
+
+}
+
+#head3{
+
+	color: black;
+	font-size: 16px;
+
+	
+}
+
+
+ ul {
+
+    list-style: none;
+ 	display: inline-block;
+ 	
+
+ }
+
+ ul li{
+ 	list-style: none;
+ 	display: inline-block;
+
+ 	
+
+ }
+
+  ul li a{
+  	display: block;
+ 	font-size: 20px;
+ 	text-indent: 90px;
+ 	text-decoration: none;
+ 	text-align: center;
+ 	color: white;
+ 	margin-left: 30%;
+ 	padding: 2px;
+
+ }
+
+
+
+.profile {
+	position: absolute;
+	width: 20%;
+	height: 150vh;
+	top: -3%;
+	left: 0;
+	box-sizing: 40px;
+	font-size: 20px;
+	font-weight: bold;
+	margin-right:90%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	background-color:#FEFDF3;
+}
+.admin-profile{
+	position: absolute;
+	text-align: left;
+	width: 20%;
+	height: 150vh;
+	top: -3%;
+	left: 0;
+	box-sizing: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	margin-right:90%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	background-color:#FEFDF3;
+}
+
+.prof{
+	width: 150px;
+	height: auto;
+    margin: 40px;
+    padding: 10px;
+}
+
+.user, .gm {
+	text-align: center;
+    margin:10px;
+    padding:10px;
+	font-size: 35px;
+	color: black;
+}
+
+ .regform{
+
+	width: 800px;
+    background-color: rgb(0, 0, 0, 0.6);
+    margin: auto;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#register{
+
+    width: 100%;
+    height: 450px;
+
+
+}
+
+.main{
+	background-color: rgb(0, 0, 0, 0.5);
+	width: 800px;
+	margin: auto;
+
+}
+
+form{
+	padding: 5px;
+}
+
+.name{
+	margin-left: 25px;
+	margin-top: 5px;
+	width: 125px;
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.firstname{
+	position: relative;
+	left: 90px;
+	top: -35px;
+	line-height: 40px;
+	border-radius: 6px;
+	padding: 0 22px;
+	font-size: 16px;
+}
+
+.lastname{
+	position: relative;
+	left: 400px;
+	top: -80px;
+	line-height: 40px;
+	border-radius: 6px;
+	padding: 0 22px;
+	font-size: 16px;
+}
+
+.firstlabel{
+
+	position: relative;
+	color: white;
+	text-transform: uppercase;
+	font-size: 14px;
+	left: 170px;
+	top: -45px;
+}
+
+.lastlabel{
+
+	position: relative;
+	color: white;
+	text-transform: uppercase;
+	font-size: 14px;
+	left: 580px;
+	top: -75px;
+}
+
+.email{
+   
+   position: relative;
+   left: 90px;
+   top: -37px;
+   line-height: 40px;
+   width: 200px;
+   border-radius: 6px;
+   padding: 0  22px;
+   font-size: 16px;
+   color: black;
+}
+
+.phone{
+   
+   position: relative;
+   left: 90px;
+   top: -10px;
+   line-height: 40px;
+   width: 200px;
+   border-radius: 6px;
+   padding: 0  22px;
+   font-size: 16px;
+   color: black;
+}
+
+
+.department{
+     color:white;
+
+	} 
+.department, .dept{
+   
+   position: relative;
+   left: 500px;
+   top: -240px;
+   line-height: 40px;
+   width: 200px;
+   border-radius: 6px;
+   padding: 0  22px;
+   font-size: 16px;
+   
+}
+
+.schedule{
+	color: white;
+
+}
+.sched , .schedule{
+	position: relative;
+	left: 500px;
+	top: -220px;
+	line-height: 40px;
+	border-radius: 6px;
+	padding: 0 22px;
+	font-size: 16px;
+}
+
+.p-img{
+
+	width:90px;
+	height: 90px;
+	background-color: skyblue;
+	position: relative;
+	left: 500px;
+	top: -220px;
+
+}
+
+#up{
+
+	background-color: lightblue;
+	position: relative;
+	left: 620px;
+	top: -280px;
+	font-size: 18px;
+	border-radius: 15px;
+	border:2px solid black;
+
+}
+
+#add{
+
+	background-color:lightgray;
+	position: relative;
+	width: 350px;
+	height: 70px;
+	left: 6%;
+	margin-right: 70%;
+	top: -280px;
+	font-size: 18px;
+	border-radius: 15px;
+	border:2px solid black;
+
+}
